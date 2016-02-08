@@ -90,15 +90,6 @@
             </goals>
           </execution>
         </executions>
-        <!--<configuration>-->
-          <!--<libraries>-->
-          <!--<param>requests</param>-->
-            <!--&lt;!&ndash;<param>pytest</param>&ndash;&gt;-->
-            <!--<param>python-dateutil</param>-->
-            <!--<param>pytz</param>-->
-            <!--<param>retrying</param>-->
-          <!--</libraries>-->
-        <!--</configuration>-->
       </plugin>
 
 

@@ -47,7 +47,8 @@ public class PythonPipeline extends AbstractTransform  {
         return s;
     }
 /*
-Instantiates an object which reads a JSON string, does python to it, and outputs a JSON string
+Instantiates an object which reads a JSON string, does python to it, and outputs a JSON string.
+
  */
     public PythonPipeline(String module, String filePath, String function) {
         super();
