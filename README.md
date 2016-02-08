@@ -7,15 +7,20 @@ This project works using Jython -- a Python on the JVM. Jython generates JVM byt
 
 The key function is `PythonPipeline(String module, String filePath, String function)`. See `PythonComposer` for usage, and `Main.java` for an example of how this is invoked.
 
+1. `module`: Python module name
+
+1. `filePath`: path to main Python file, with prepended /, relative to src/main/resources/Lib
+
+1. `function`: function to invoke in main python file
+
+
+
 Your main Python function should expect a JSON string and return a JSON string. It should not return an Object.
 
-Module: Python module name
-FilePath: path to main Python file, with prepended /, relative to src/main/resources/Lib
-Function: function to invoke in main python file
 
 In production, the angled-dream wrapper will connect this to a PubSub for a data source and sink. `Main.java` is only used for testing.
 
-The only file you need to change is PythonComposer, which tells Sossity which Python script and function to execute.
+The only file you need to change is `PythonComposer.java`, which tells Sossity which Python script and function to execute.
 
 
 # Developing locally
@@ -32,6 +37,7 @@ The only file you need to change is PythonComposer, which tells Sossity which Py
 1. Make sure your package name is unique in the Sossity simulator if you'll be running it there.
 1. `mvn package` to bundle all the Java and Python dependencies, assuming you ran `pip install`
 1. This should create a `target/pythonsample-bundled-0.1-ALPHA.jar` which you can use in the simulator like any other Sossity jar file.
+1. You can execute this sample with `java -jar target/pythonsample-bundled-0.1-ALPHA.jar`
 
 # How Sossity deploys it.
 
