@@ -1,7 +1,13 @@
+
 # sossity-identity-pipeline-java
-Passthrough / Do-Nothing for Sossity Pipeline
+A sample Sossity pipeline using Python to append a datetime to a message.
 
 
-# building locally
+# Developing locally
 
-1. this includes a maven module that uses easy_install (not pip)
+
+
+# Building for manual deployment
+
+
+# How Sossity deploys it.
