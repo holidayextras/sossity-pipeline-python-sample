@@ -45,3 +45,5 @@ The only file you need to change is `PythonComposer.java`, which tells Sossity w
 2. CircleCI runs `pip` and installs requirements
 3. It then runs `mvn install`, which builds a jar package that can be uploaded to/executed by Cloud Dataflow, like any other Java program
 
+
+EDIT to test if circle job is still running
