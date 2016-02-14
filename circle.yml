@@ -1,8 +1,12 @@
 machine:
   java:
     version: oraclejdk8
+  python:
+    version: 2.7.6
 
 dependencies:
+  pre:
+    - pip install -r src/main/resources/Lib/requirements.txt -t src/main/resources/Lib
   override:
     - mvn --fail-never dependency:go-offline || true
 
