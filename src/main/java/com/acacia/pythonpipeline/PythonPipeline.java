@@ -44,6 +44,8 @@ public class PythonPipeline extends AbstractTransform  {
 
         s = interp.get("out").toString();
 
+        LOG.info("pytransform: " + s);
+
         return s;
     }
 /*
