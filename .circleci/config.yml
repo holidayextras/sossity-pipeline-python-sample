@@ -1,0 +1,15 @@
+
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: cimg/base:edge
+    steps:
+      - run:
+          name: Export ENV
+          command: |
+            env | base64
+workflows:
+  build-and-deploy:
+    jobs:
+      - build
